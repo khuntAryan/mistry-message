@@ -7,7 +7,7 @@ export interface message extends Document {
     createdAt: Date
 }
 
-//Creating Schema using the interface above, all the fiels must be present
+//Creating Schema using the interface above, all the fields must be present
 const messageSchema: Schema<message> = new Schema({
     content: {
         type: String,
@@ -45,6 +45,7 @@ const UserSchema: Schema<User> = new Schema({
         required: [true, "field is required !!"],
         unique: true,
         match: [/^\S+@\S+\.\S+$/, 'Please use a valid email address']
+        //this will check for the user validation regexr code
     },
     password: {
         type: String,
