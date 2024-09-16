@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "resend": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6"
   }
 }
