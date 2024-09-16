@@ -1,5 +1,3 @@
-import { promises } from "dns"
-import { connect } from "http2"
 import mongoose, { Mongoose } from "mongoose"
 
 type connectionObject = {
